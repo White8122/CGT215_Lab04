@@ -14,9 +14,43 @@ void printMenu() {
 	cout << "\t4. Exit" << endl;
 	cout << "Your Selection: ";
 }
+
 void factorial() {
-	// I recommend writing your factorial code here
+	int num, factorial=1;
+
+	 cout << "Factorial: " << endl;
+	 cout << "Enter a number: ";
+	 cin >> num;
+	 while (num < 0)
+	 {
+		 cout << "Nice try, please enter a POSITIVE number...:";
+		 cin >> num;
+	 }
+	 if (num >= 0)
+	 {
+		 cout << num << "! = ";
+		
+		 for (int i = 1; i <= num; i++)
+		 {
+			 if (i != num)
+
+			 {
+				 cout << i << " * ";
+			 }
+			 else
+			
+			 {
+				 cout << num << " = ";
+			 }
+			 
+			 factorial = factorial * i;
+			
+		 }
+		 cout << factorial << endl;
+	 }
 }
+
+
 void arithmetic() {
 	// I recommend writing your arithmetic series code here
 }
