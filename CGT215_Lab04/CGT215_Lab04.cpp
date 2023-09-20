@@ -52,7 +52,29 @@ void factorial() {
 
 
 void arithmetic() {
-	// I recommend writing your arithmetic series code here
+	
+	int S;
+	int D;
+	int E;
+	int Sum=1;
+
+	cout << "Arithmetic Series: " << endl;
+	cout << "Enter a number to start at: ";
+	cin >> S;
+
+	cout << "Enter a number to add each time: ";
+	cin >> D;
+
+	cout << "Enter the number of elements in the series: ";
+	cin >> E;
+
+	while (E < 0)
+	{
+		cout << "Nice try, please enter a POSITIVE number...:";
+		cin >> E;
+
+	}
+	
 }
 void geometric() {
 	// I recommend writing your geometric series code here
