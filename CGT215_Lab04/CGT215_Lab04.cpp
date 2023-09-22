@@ -49,14 +49,15 @@ void factorial() {
 		 cout << factorial << endl;
 	 }
 }
-
+// Factorial code done!
 
 void arithmetic() {
-	
+
 	int S;
 	int D;
 	int E;
-	int Sum=1;
+	int a = 0, b = 0;
+	int Sum = 1;
 
 	cout << "Arithmetic Series: " << endl;
 	cout << "Enter a number to start at: ";
@@ -67,18 +68,79 @@ void arithmetic() {
 
 	cout << "Enter the number of elements in the series: ";
 	cin >> E;
-
+	
 	while (E < 0)
 	{
 		cout << "Nice try, please enter a POSITIVE number...:";
 		cin >> E;
 
+
+	}
+
+	b = E;
+	b -= 1;
+	cout << S; // outputs the first number
+
+	while (b > 0)// takes that new value and we decrement it till it hits zero 
+	{
+		cout << " + ";
+		a += S; // adds the total up for the final part 
+		S += D;// adds the increment to the initial value 
+		cout << S;
+		b--;
+	}
+	if (b == 0)
+	{
+		a += S;
+		cout << " = " << a << endl;
+	}
+	
+
+}
+
+// Arithmetic Series Done!
+void geometric() {
+	
+	int h, i, j, k = 0, l = 0;
+	cout << "Geometric Series: " << endl;
+	cout << "Enter a number to start at: ";
+	cin >> h;
+
+	cout << "Enter a number to multiply by each time: ";
+	cin >> i;
+
+	cout << "Enter the number of elements in the series: ";
+	cin >> j;
+
+	while (j < 0)
+	{
+		cout << "Nice try, please enter a POSITIVE number...:";
+		cin >> j;
+
+
+	}
+
+	k = j;
+	k -= 1;
+	cout << h;
+	while (k > 0)
+	{
+		cout << " + ";
+		l += h;
+		h *= i;
+		cout << h; // outputs the current value after adding the difference value
+		k--; // decrements the # of Elements
+	}
+	if (k == 0)
+	{
+		l += h;//adds the final value to a
+		cout << " = " << l << endl;
 	}
 	
 }
-void geometric() {
-	// I recommend writing your geometric series code here
-}
+
+// Geo done :)!
+
 int main() {
 	int choice;
 	char again;
